@@ -4,8 +4,8 @@ window.addEventListener('load', function () {
 
 
     function change() {
-        const colorBg = Math.floor(Math.random() * colors.length + 1);
-        const textColor = Math.floor(Math.random() * textColors.length + 1);
+        const colorBg = Math.floor(Math.random() * colors.length);
+        const textColor = Math.floor(Math.random() * textColors.length);
         let h1 = document.querySelector('h1');
         h1.style.color = `${textColors[textColor]}`;
         let bg = document.querySelector('body');
